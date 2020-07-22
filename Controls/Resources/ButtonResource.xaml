@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:Controls">
+    <Style TargetType="{x:Type controls:ImageButton}">
+        <Setter Property="WaveBackground" Value="Black"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="ImageBackground" Value="Black"/>
+        <Setter Property="ContentMargin" Value="0"></Setter>
+        <Setter Property="ImageMargin" Value="0"></Setter>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+    <Style x:Key="DefaultImageButton" TargetType="{x:Type controls:ImageButton}">
+        <Setter Property="WaveBackground" Value="Black"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="ImageBackground" Value="Black"/>
+        <Setter Property="ContentMargin" Value="0"></Setter>
+        <Setter Property="ImageMargin" Value="0"></Setter>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+</ResourceDictionary>

@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaveButton", "WaveButton\WaveButton.csproj", "{E344A397-206E-4024-B87B-E8A324C4F983}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Controls\Controls.csproj", "{53535DEC-C2BE-4786-B071-3750EC907ACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlsTest", "ControlsTest\ControlsTest.csproj", "{896FA605-836C-437E-BD8E-0A506998D212}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{E344A397-206E-4024-B87B-E8A324C4F983}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E344A397-206E-4024-B87B-E8A324C4F983}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E344A397-206E-4024-B87B-E8A324C4F983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53535DEC-C2BE-4786-B071-3750EC907ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53535DEC-C2BE-4786-B071-3750EC907ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53535DEC-C2BE-4786-B071-3750EC907ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53535DEC-C2BE-4786-B071-3750EC907ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896FA605-836C-437E-BD8E-0A506998D212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896FA605-836C-437E-BD8E-0A506998D212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896FA605-836C-437E-BD8E-0A506998D212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896FA605-836C-437E-BD8E-0A506998D212}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
