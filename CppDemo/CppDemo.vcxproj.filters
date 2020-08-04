@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CppDemo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CppDemoDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AESHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64Helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CINIHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CppSQLite3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DbHelperSQLite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="des.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Hmacsha.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Hmacsha1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HttpsClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5Helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sha1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sha256.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="unzip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="URLCode.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ZipImplement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ibe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CppDemo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CppDemoDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AESHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64Helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CINIHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CLogHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CppSQLite3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DbHelperSQLite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="des.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Hmacsha.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Hmacsha1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpsClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5Helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sha1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sha256.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinystr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="unzip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="URLCode.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="zip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ZipImplement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CppDemo.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CppDemo.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\CppDemo.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
