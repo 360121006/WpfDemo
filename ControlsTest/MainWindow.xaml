@@ -37,7 +37,7 @@
         </Style>
 
     </Window.Resources>
-    <Grid>
+    <Grid Background="White">
         <StackPanel VerticalAlignment="Center" Orientation="Vertical" HorizontalAlignment="Center" >
             <controls:ImageButton ImageBackground="Red" ImageStyle="{StaticResource myImg}"  x:Name="PicButton" Height="40" Click="PicButton_Click"></controls:ImageButton>
         </StackPanel>
