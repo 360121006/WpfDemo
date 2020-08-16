@@ -31,7 +31,7 @@
                         <ContentPresenter Margin="{TemplateBinding local:ImageButton.ContentMargin}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                         <ContentControl Margin="{TemplateBinding local:ImageButton.ImageMargin}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
                             <Viewbox Stretch="Uniform">
-                                <local:VectorImage Background="{TemplateBinding local:ImageButton.ImageBackground}" Style="{TemplateBinding local:ImageButton.ImageStyle}"  Panel.ZIndex="1"></local:VectorImage>
+                                <Image Style="{TemplateBinding local:ImageButton.ImageStyle}"  Panel.ZIndex="1"></Image>
                             </Viewbox>
                         </ContentControl>
                     </StackPanel>

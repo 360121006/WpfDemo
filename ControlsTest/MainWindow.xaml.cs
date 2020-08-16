@@ -26,19 +26,19 @@ namespace ControlsTest
             InitializeComponent();
         }
 
-        private childItem FindVisualChild<childItem>(DependencyObject obj)
-            where childItem : DependencyObject
+        private T FindVisualChild<T>(DependencyObject obj)
+            where T : DependencyObject
         {
             for (int i = 0; i < VisualTreeHelper.GetChildrenCount(obj); i++)
             {
                 DependencyObject child = VisualTreeHelper.GetChild(obj, i);
-                if (child != null && child is childItem)
+                if (child != null && child is T item)
                 {
-                    return (childItem)child;
+                    return item;
                 }
                 else
                 {
-                    childItem childOfChild =FindVisualChild< childItem>(child);
+                    T childOfChild = FindVisualChild<T>(child);
                     if (childOfChild != null)
                         return childOfChild;
                 }
@@ -49,6 +49,17 @@ namespace ControlsTest
 
         private void PicButton_Click(object sender, RoutedEventArgs e)
         {
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            var imageSources = new List<BitmapImage>
+            {
+                new BitmapImage(new Uri("pack://application:,,,/Images/1.jpg")),
+                new BitmapImage(new Uri("pack://application:,,,/Images/2.jpg")),
+                new BitmapImage(new Uri("pack://application:,,,/Images/3.jpg")),
+            };
+            MyDynamicMagnet.ImageSources = imageSources;
         }
     }
 }
