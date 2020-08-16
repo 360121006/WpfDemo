@@ -6,7 +6,7 @@
             <Setter.Value>
                 <ControlTemplate>
                     <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=Value,StringFormat=p2}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <ed:Arc></ed:Arc>
+                    <!--<ed:Arc></ed:Arc>-->
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
