@@ -29,7 +29,7 @@
     </Window.Resources>
     <Grid Background="White">
         <StackPanel VerticalAlignment="Center" Orientation="Vertical" HorizontalAlignment="Center" x:Name="sp">
-            <!--<controls:ImageButton ImageBackground="Red" ImageStyle="{StaticResource myImg}"  x:Name="PicButton" Height="40" Click="PicButton_Click"></controls:ImageButton>-->
+            <controls:ImageButton ImageBackground="Red" ImageStyle="{StaticResource myImg}" Content="测试" x:Name="PicButton" Height="40" Click="PicButton_Click" Width="auto"></controls:ImageButton>
             <controls:DynamicMagnet x:Name="MyDynamicMagnet" Width="200" Height="200"></controls:DynamicMagnet>
         </StackPanel>
     </Grid>

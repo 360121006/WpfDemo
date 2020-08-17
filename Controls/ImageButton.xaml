@@ -28,12 +28,12 @@
                 </VisualStateManager.VisualStateGroups>
                 <Border x:Name="MyBorder" Background="{TemplateBinding Background}" CornerRadius="{TemplateBinding local:ImageButton.CornerRadius}" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" >
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
-                        <ContentPresenter Margin="{TemplateBinding local:ImageButton.ContentMargin}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                         <ContentControl Margin="{TemplateBinding local:ImageButton.ImageMargin}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}">
                             <Viewbox Stretch="Uniform">
                                 <Image Style="{TemplateBinding local:ImageButton.ImageStyle}"  Panel.ZIndex="1"></Image>
                             </Viewbox>
                         </ContentControl>
+                        <ContentPresenter Margin="{TemplateBinding local:ImageButton.ContentMargin}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                     </StackPanel>
                 </Border>
                 <Path Fill="{TemplateBinding local:ImageButton.WaveBackground}" x:Name="MyPath" MaxWidth="{TemplateBinding ActualWidth}" MaxHeight="{TemplateBinding ActualHeight}">
