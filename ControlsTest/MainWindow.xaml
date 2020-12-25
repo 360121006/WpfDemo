@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:ControlsTest"
         xmlns:controls="clr-namespace:Controls;assembly=Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="524" Loaded="Window_Loaded">
+        WindowStyle="None"
+        BorderThickness="10"
+        AllowsTransparency="True"
+        Title="MainWindow" Height="400" Width="524" Loaded="Window_Loaded">
+    <Window.Effect>
+        <DropShadowEffect BlurRadius="10" Color="#FF858484" Direction="270" ShadowDepth="1"/>
+    </Window.Effect>
     <Window.Resources>
         
         <Style x:Key="myImg" TargetType="{x:Type Image}">
@@ -25,12 +31,20 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
+        <Style TargetType="ListBoxItem">
+            <EventSetter Event="PreviewMouseMove" Handler="ListBox_PreviewMouseMove"/>
+        </Style>
     </Window.Resources>
     <Grid Background="White">
         <StackPanel VerticalAlignment="Center" Orientation="Vertical" HorizontalAlignment="Center" x:Name="sp">
             <controls:ImageButton ImageBackground="Red" ImageStyle="{StaticResource myImg}" Content="测试" x:Name="PicButton" Height="40" Click="PicButton_Click" Width="auto"></controls:ImageButton>
             <controls:DynamicMagnet x:Name="MyDynamicMagnet" Width="200" Height="200"></controls:DynamicMagnet>
+            <controls:CircleProgressBar Value="50" Maximum="100" Width="60" Height="60"></controls:CircleProgressBar>
+            <ListBox Margin="5,10">
+                <ListBoxItem AllowDrop="True">000</ListBoxItem>
+                <ListBoxItem AllowDrop="True">111</ListBoxItem>
+                <ListBoxItem AllowDrop="True">222</ListBoxItem>
+            </ListBox>
         </StackPanel>
     </Grid>
 </Window>

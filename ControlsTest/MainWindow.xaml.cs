@@ -61,5 +61,11 @@ namespace ControlsTest
             };
             MyDynamicMagnet.ImageSources = imageSources;
         }
+
+        private void ListBox_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            var item = sender as ListBoxItem;
+            DragDrop.DoDragDrop(item, item.Content, DragDropEffects.Copy);
+        }
     }
 }

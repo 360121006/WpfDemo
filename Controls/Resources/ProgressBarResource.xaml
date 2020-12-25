@@ -1,14 +1,21 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing">
-    <Style TargetType="{x:Type ProgressBar}">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate>
-                    <TextBlock Text="{Binding RelativeSource={RelativeSource Mode=TemplatedParent},Path=Value,StringFormat=p2}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <!--<ed:Arc></ed:Arc>-->
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
+                    xmlns:controls="clr-namespace:Controls">
+    <Style TargetType="{x:Type controls:CircleProgressBar}">
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="Thickness" Value="4"/>
+        <Setter Property="Background" Value="LightBlue"/>
+        <Setter Property="Width" Value="60"/>
+        <Setter Property="Height" Value="60"/>
+    </Style>
+
+    <Style x:Key="DefaultCircleProgressBar" TargetType="{x:Type controls:CircleProgressBar}">
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="Foreground" Value="#666666"/>
+        <Setter Property="Thickness" Value="3"/>
+        <Setter Property="Background" Value="LightBlue"/>
+        <Setter Property="Width" Value="60"/>
+        <Setter Property="Height" Value="60"/>
     </Style>
 </ResourceDictionary>

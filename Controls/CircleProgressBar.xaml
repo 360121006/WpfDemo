@@ -1,0 +1,30 @@
+﻿<ProgressBar x:Class="Controls.CircleProgressBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="200">
+    <ProgressBar.Resources>
+        <ResourceDictionary Source="Resources/ConverterResource.xaml"></ResourceDictionary>
+    </ProgressBar.Resources>
+    <ProgressBar.Template>
+        <ControlTemplate TargetType="{x:Type ProgressBar}">
+            <Grid>
+                <Viewbox>
+                    <Path Name="MyCycleProcessBar" Stroke="{TemplateBinding Background}" Height="50" Width="50" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    </Path>
+                </Viewbox>
+                <TextBox IsReadOnly="True" Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{TemplateBinding Foreground}" FontSize="{TemplateBinding FontSize}" BorderThickness="0" TextChanged="Percent_TextChanged">
+                    <TextBox.Text>
+                        <MultiBinding Converter="{StaticResource ProgressBarPercentConverter}" StringFormat="p2">
+                            <Binding Path="Value"/>
+                            <Binding Path="Maximum"/>
+                        </MultiBinding>
+                    </TextBox.Text>
+                </TextBox>
+            </Grid>
+        </ControlTemplate>
+    </ProgressBar.Template>
+</ProgressBar>
