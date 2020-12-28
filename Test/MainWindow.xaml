@@ -6,13 +6,31 @@
         xmlns:local="clr-namespace:Test"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DrawingBrush x:Key="borderBrush" Viewport="0,0,4,4" ViewportUnits="Absolute" TileMode="Tile">
+            <DrawingBrush.Drawing>
+                <DrawingGroup>
+                    <GeometryDrawing Brush="Black">
+                        <GeometryDrawing.Geometry>
+                            <GeometryGroup>
+                                <RectangleGeometry Rect="0,0,50,50" />
+                                <RectangleGeometry Rect="50,50,50,50" />
+                            </GeometryGroup>
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+            </DrawingBrush.Drawing>
+        </DrawingBrush>
+    </Window.Resources>
     <Grid>
-        <ListBox Name="LBoxSort" PreviewMouseMove="LBoxSort_OnPreviewMouseMove" Drop="LBoxSort_OnDrop" AllowDrop="True">
-            <TextBlock Text="1111"/>
-            <TextBlock Text="2222"/>
-            <TextBlock Text="3333"/>
-            <TextBlock Text="4444"/>
-            <TextBlock Text="5555"/>
-        </ListBox>
+        <Canvas>
+            <Border Background="White" Width="50" Height="50" BorderBrush="{StaticResource borderBrush}" BorderThickness="1"  Canvas.Left="100" Canvas.Top="50" x:Name="bd1"></Border>
+            <Grid Background="Red" Width="50" Height="50" Canvas.Left="100" Canvas.Top="50" x:Name="key1" Panel.ZIndex="1"></Grid>
+            <Border Background="White" Width="50" Height="50" BorderBrush="{StaticResource borderBrush}" BorderThickness="1"  Canvas.Left="200" Canvas.Top="50" x:Name="bd2"></Border>
+            <Grid Background="Green" Width="50" Height="50" Canvas.Left="200" Canvas.Top="50" x:Name="key2" Panel.ZIndex="1"></Grid>
+            <Border Background="White" Width="50" Height="50" BorderBrush="{StaticResource borderBrush}" BorderThickness="1"  Canvas.Left="300" Canvas.Top="50" x:Name="bd3"></Border>
+            <Grid Background="Blue" Width="50" Height="50" Canvas.Left="300" Canvas.Top="50" x:Name="key3" Panel.ZIndex="1"></Grid>
+
+        </Canvas>
     </Grid>
 </Window>
